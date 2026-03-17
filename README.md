@@ -1,10 +1,12 @@
- <div align="center">
+<div align="center">
+
+<img src="./assets/hero-banner.svg" alt="Mithrandir of the Machine banner" width="100%" />
+
+<br/>
 
 > *"Not all those who wander are lost."* — J.R.R. Tolkien
 
-# 🧙 Mithrandir of the Machine — abuel3ees 🧙
-
-*A wanderer of the digital realm, forging artefacts of logic and light*
+### *A wanderer of the digital realm, forging artefacts of logic and light*
 
 </div>
 
@@ -44,6 +46,10 @@
 ## 🗡️ The Armoury — Tech Stack of the Realm
 
 *"Even the smallest person can change the course of the future."*
+
+<div align="center">
+  <img src="./assets/skills-constellation.svg" alt="Tech stack constellation" width="100%" />
+</div>
 
 **⚔️ Tongues of the Elves & Men** *(Languages)*
 

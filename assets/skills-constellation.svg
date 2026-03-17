@@ -1,0 +1,24 @@
+<svg width="1200" height="190" viewBox="0 0 1200 190" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tech constellation graphic">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1200" y2="190" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101932"/>
+      <stop offset="1" stop-color="#29164E"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="85" y1="95" x2="1115" y2="95" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#50D9FF"/>
+      <stop offset="1" stop-color="#BE8BFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="190" rx="20" fill="url(#g1)"/>
+  <path d="M85 95H1115" stroke="url(#g2)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 10"/>
+
+  <g fill="#EAF7FF" font-family="Segoe UI, Inter, Arial, sans-serif" font-weight="700" font-size="20">
+    <circle cx="130" cy="95" r="6" fill="#50D9FF"/><text x="150" y="101">TypeScript</text>
+    <circle cx="320" cy="95" r="6" fill="#68E4B8"/><text x="340" y="101">React</text>
+    <circle cx="468" cy="95" r="6" fill="#FFD36E"/><text x="488" y="101">Laravel</text>
+    <circle cx="620" cy="95" r="6" fill="#7BC3FF"/><text x="640" y="101">Node.js</text>
+    <circle cx="760" cy="95" r="6" fill="#FF8FA2"/><text x="780" y="101">Python</text>
+    <circle cx="902" cy="95" r="6" fill="#D8AEFF"/><text x="922" y="101">Verilog</text>
+    <circle cx="1046" cy="95" r="6" fill="#B8FF9E"/><text x="1066" y="101">CUDA</text>
+  </g>
+</svg>
