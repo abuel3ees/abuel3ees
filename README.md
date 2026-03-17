@@ -1,6 +1,6 @@
 ## Hi there, I'm abuel3ees 👋
 
-I'm a passionate software engineer who loves building things — from full-stack web apps to low-level hardware designs.
+I'm a passionate computer engineer who loves building things — from full-stack web apps to low-level hardware designs.
 
 - 🔭 I'm currently working on full-stack applications and computer architecture projects
 - 🌱 I'm currently exploring GPU computing with CUDA and hardware design with Verilog
