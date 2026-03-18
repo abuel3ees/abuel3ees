@@ -8,23 +8,21 @@
 
 ### *A wanderer of the digital realm, forging artefacts of logic and light*
 
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1200&color=7AA2F7&center=true&vCenter=true&width=820&lines=Building+cool+things+across+web,+systems,+and+silicon;Always+learning,+always+shipping+%E2%9A%A1" alt="Animated typing banner" />
+</div>
+
 </div>
 
 ---
 
 <div align="center">
 
-```
-             .
-          .´     `.
-        .´    🧙    `.
-       /   ~~~~~~~~~~~~\
-      |   ONE CODEBASE  |
-      |   TO RULE THEM  |
-      |       ALL       |
-       \   ~~~~~~~~~~~~/
-        `.           .´
-          `._______.'
+```text
+      ✨  ⚔️  ✨
+   The Fellowship ships
+   one commit at a time
+      ✨  🧙  ✨
 ```
 
 </div>
