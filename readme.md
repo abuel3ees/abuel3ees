@@ -261,6 +261,16 @@ Each tongue carries its own power — from the High Elvish of TypeScript to the 
 
 <sub>*Auto-generated with [snk](https://github.com/Platane/snk) via `.github/workflows/snake.yml`*</sub>
 
+<br/>
+
+**2025 Contributions**
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/github-snake-2025-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/github-snake-2025.svg" />
+  <img alt="2025 contribution snake" src="./assets/github-snake-2025-dark.svg" width="100%" />
+</picture>
+
 </div>
 
 <!-- ═══════════════════════════════════════════════════ -->
