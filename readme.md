@@ -254,12 +254,12 @@ Each tongue carries its own power — from the High Elvish of TypeScript to the 
 <br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abuel3ees/abuel3ees/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/abuel3ees/abuel3ees/output/github-snake.svg" />
-  <img alt="The Watcher in the Water consuming the contribution graph" src="https://raw.githubusercontent.com/abuel3ees/abuel3ees/output/github-snake-dark.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/github-snake.svg" />
+  <img alt="The Watcher in the Water consuming the contribution graph" src="./assets/github-snake-dark.svg" width="100%" />
 </picture>
 
-<sub>*Set up with [snk](https://github.com/Platane/snk) — add a GitHub Action to auto-generate!*</sub>
+<sub>*Auto-generated with [snk](https://github.com/Platane/snk) via `.github/workflows/snake.yml`*</sub>
 
 </div>
 

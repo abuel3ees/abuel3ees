@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub snake contribution graph</title>
+  <desc id="desc">Placeholder image shown until the snake workflow generates the latest contribution graph animation.</desc>
+  <rect width="1200" height="240" fill="#f6f8fa"/>
+  <text x="50%" y="46%" text-anchor="middle" font-size="30" fill="#24292f" font-family="Segoe UI, Arial, sans-serif">GitHub snake contribution graph</text>
+  <text x="50%" y="62%" text-anchor="middle" font-size="18" fill="#57606a" font-family="Segoe UI, Arial, sans-serif">This photo is auto-updated by .github/workflows/snake.yml</text>
+</svg>
