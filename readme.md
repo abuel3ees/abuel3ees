@@ -125,7 +125,7 @@ Each tongue carries its own power — from the High Elvish of TypeScript to the 
 <div align="center">
 
 <!-- THE EYE OF SAURON (Stats header) -->
-<img src="./assets/eye-of-sauron.svg" alt="The Eye of Sauron — animated fiery eye watching over the stats" width="100%" />
+<img src="./assets/sauron.gif" alt="The Eye of Sauron — animated fiery eye watching over the stats" width="100%" />
 
 <br/><br/>
 
