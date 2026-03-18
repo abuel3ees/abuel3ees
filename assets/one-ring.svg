@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 120" width="100%">
+  <defs>
+    <linearGradient id="rBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0f14"/>
+      <stop offset="100%" style="stop-color:#12151c"/>
+    </linearGradient>
+    <linearGradient id="rGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b7340;stop-opacity:0"/>
+      <stop offset="20%" style="stop-color:#c9952c;stop-opacity:0.6"/>
+      <stop offset="50%" style="stop-color:#f5d058;stop-opacity:0.8"/>
+      <stop offset="80%" style="stop-color:#c9952c;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#8b7340;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="rGlow">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="120" fill="url(#rBg)" rx="4"/>
+
+  <!-- The Ring (horizontal ellipse) -->
+  <g transform="translate(400, 60)">
+    <!-- Outer ring -->
+    <ellipse rx="280" ry="30" fill="none" stroke="#c9952c" stroke-width="1.5" opacity="0.2" filter="url(#rGlow)">
+      <animate attributeName="opacity" values="0.15;0.3;0.15" dur="6s" repeatCount="indefinite"/>
+    </ellipse>
+    <!-- Inner ring -->
+    <ellipse rx="270" ry="24" fill="none" stroke="#f5d058" stroke-width="0.5" opacity="0.1">
+      <animate attributeName="opacity" values="0.08;0.18;0.08" dur="6s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Inscription line 1 (the famous verse) -->
+  <text x="400" y="50" text-anchor="middle" fill="#c9a84c" font-size="12" font-family="'Palatino Linotype', Palatino, Georgia, serif" font-style="italic" letter-spacing="2" opacity="0.45" filter="url(#rGlow)">
+    ✦  One Repo to rule them all, One Repo to find them  ✦
+    <animate attributeName="opacity" values="0.3;0.55;0.3" dur="6s" repeatCount="indefinite"/>
+  </text>
+  <!-- Inscription line 2 -->
+  <text x="400" y="75" text-anchor="middle" fill="#c9a84c" font-size="12" font-family="'Palatino Linotype', Palatino, Georgia, serif" font-style="italic" letter-spacing="2" opacity="0.35" filter="url(#rGlow)">
+    ✦  One Repo to bring them all, and in the code bind them  ✦
+    <animate attributeName="opacity" values="0.25;0.45;0.25" dur="6s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Small traveling sparkle along the ring -->
+  <circle r="2" fill="#f5d058" opacity="0.4" filter="url(#rGlow)">
+    <animateMotion dur="8s" repeatCount="indefinite" path="M120,60 C200,30 300,30 400,30 C500,30 600,30 680,60 C600,90 500,90 400,90 C300,90 200,90 120,60"/>
+    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
