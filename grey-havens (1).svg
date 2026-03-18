@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%">
+  <defs>
+    <linearGradient id="havenSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0f14"/>
+      <stop offset="60%" style="stop-color:#111520"/>
+      <stop offset="100%" style="stop-color:#141824"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2030"/>
+      <stop offset="100%" style="stop-color:#0d1018"/>
+    </linearGradient>
+    <linearGradient id="havenGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9952c;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#c9a84c;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#c9952c;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="hGlow">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="hDeepGlow">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="200" fill="url(#havenSky)"/>
+
+  <!-- Stars -->
+  <circle cx="100" cy="15" r="0.8" fill="#8ba4c7" opacity="0.4"><animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" repeatCount="indefinite"/></circle>
+  <circle cx="220" cy="25" r="0.6" fill="#8ba4c7" opacity="0.3"><animate attributeName="opacity" values="0.2;0.5;0.2" dur="4s" repeatCount="indefinite"/></circle>
+  <circle cx="380" cy="10" r="0.7" fill="#8ba4c7" opacity="0.4"><animate attributeName="opacity" values="0.3;0.7;0.3" dur="3.5s" repeatCount="indefinite"/></circle>
+  <circle cx="550" cy="20" r="0.5" fill="#8ba4c7" opacity="0.3"><animate attributeName="opacity" values="0.2;0.5;0.2" dur="4.5s" repeatCount="indefinite"/></circle>
+  <circle cx="680" cy="12" r="0.8" fill="#8ba4c7" opacity="0.4"><animate attributeName="opacity" values="0.3;0.6;0.3" dur="3.2s" repeatCount="indefinite"/></circle>
+
+  <!-- Eärendil's star (west horizon) -->
+  <g transform="translate(400, 50)" filter="url(#hDeepGlow)">
+    <circle r="2.5" fill="#d4e4f7" opacity="0.5">
+      <animate attributeName="r" values="2;3.5;2" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="#d4e4f7" stroke-width="0.3" opacity="0.3"/>
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#d4e4f7" stroke-width="0.3" opacity="0.3"/>
+  </g>
+
+  <!-- Sea -->
+  <rect x="0" y="110" width="800" height="90" fill="url(#sea)"/>
+  <!-- Horizon line -->
+  <line x1="0" y1="110" x2="800" y2="110" stroke="#2a3450" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Water reflections -->
+  <g opacity="0.1" stroke="#8ba4c7" stroke-width="0.3">
+    <line x1="350" y1="120" x2="370" y2="120"><animate attributeName="opacity" values="0.05;0.15;0.05" dur="3s" repeatCount="indefinite"/></line>
+    <line x1="400" y1="130" x2="430" y2="130"><animate attributeName="opacity" values="0.05;0.12;0.05" dur="4s" repeatCount="indefinite"/></line>
+    <line x1="370" y1="140" x2="395" y2="140"><animate attributeName="opacity" values="0.05;0.1;0.05" dur="3.5s" repeatCount="indefinite"/></line>
+    <line x1="200" y1="125" x2="225" y2="125"><animate attributeName="opacity" values="0.05;0.12;0.05" dur="4.2s" repeatCount="indefinite"/></line>
+    <line x1="580" y1="135" x2="610" y2="135"><animate attributeName="opacity" values="0.05;0.1;0.05" dur="3.8s" repeatCount="indefinite"/></line>
+  </g>
+
+  <!-- Elven ship silhouette (sailing west) -->
+  <g transform="translate(400, 100)" opacity="0.25" filter="url(#hGlow)">
+    <!-- Hull -->
+    <path d="M-30,5 C-20,-2 20,-2 30,5 L25,8 L-25,8 Z" fill="#8ba4c7" opacity="0.3"/>
+    <!-- Mast -->
+    <line x1="0" y1="5" x2="0" y2="-20" stroke="#8ba4c7" stroke-width="0.5"/>
+    <!-- Sail (swan-wing shape) -->
+    <path d="M0,-18 C15,-15 18,-5 5,2 L0,0 Z" fill="#8ba4c7" opacity="0.2"/>
+    <!-- Swan prow -->
+    <path d="M-30,3 C-35,0 -33,-5 -28,-3" fill="none" stroke="#8ba4c7" stroke-width="0.5"/>
+    <!-- Gentle floating animation -->
+    <animateTransform attributeName="transform" type="translate" values="400,100;395,98;400,100;405,98;400,100" dur="6s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Second distant ship -->
+  <g transform="translate(300, 105)" opacity="0.12">
+    <path d="M-15,3 C-10,-1 10,-1 15,3 L12,5 L-12,5 Z" fill="#8ba4c7"/>
+    <line x1="0" y1="3" x2="0" y2="-10" stroke="#8ba4c7" stroke-width="0.3"/>
+    <path d="M0,-9 C8,-7 9,-2 3,1 L0,0 Z" fill="#8ba4c7" opacity="0.3"/>
+    <animateTransform attributeName="transform" type="translate" values="300,105;297,103;300,105;303,103;300,105" dur="7s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Quote -->
+  <text x="400" y="160" text-anchor="middle" fill="#6b88aa" font-size="12" font-family="'Palatino Linotype', Palatino, Georgia, serif" font-style="italic" opacity="0.5">
+    "I will not say: do not weep; for not all tears are an evil."
+  </text>
+
+  <!-- Farewell line -->
+  <line x1="200" y1="175" x2="600" y2="175" stroke="url(#havenGold)" stroke-width="0.5" opacity="0.3"/>
+
+  <text x="400" y="192" text-anchor="middle" fill="#5a4a2a" font-size="9" font-family="'Palatino Linotype', Georgia, serif" letter-spacing="4" font-variant="small-caps" opacity="0.35">
+    namárië
+  </text>
+</svg>
