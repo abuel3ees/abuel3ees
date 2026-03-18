@@ -145,7 +145,7 @@ Each tongue carries its own power — from the High Elvish of TypeScript to the 
 <br/><br/>
 
 <a href="https://github.com/abuel3ees">
-  <img src="./assets/trophies.svg" alt="Trophies of the Age"/>
+  <img src="assets/trophies.svg" alt="Trophies of the Age"/>
 </a>
 
 </div>
