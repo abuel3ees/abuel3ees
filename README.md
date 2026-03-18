@@ -280,9 +280,9 @@ Each tongue carries its own power — from the High Elvish of TypeScript to the 
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/The_White_Tower_%E2%80%93_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/abuel3ees)
-[![Twitter](https://img.shields.io/badge/The_Palant%C3%ADr_%E2%80%93_%F0%9D%95%8F-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/abuel3ees)
-[![Email](https://img.shields.io/badge/Send_a_Raven_%E2%80%93_Email-8b2500?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your@email.com)
+[![LinkedIn](https://img.shields.io/badge/The_White_Tower_%E2%80%93_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdulrahman-al-essa-a960a928b/en/)
+[![Twitter](https://img.shields.io/badge/The_Palant%C3%ADr_%E2%80%93_%F0%9D%95%8F-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/3eesus__)
+[![Email](https://img.shields.io/badge/Send_a_Raven_%E2%80%93_Email-8b2500?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abdurahmanluay@email.com)
 [![Portfolio](https://img.shields.io/badge/The_Red_Book_%E2%80%93_Portfolio-c9952c?style=for-the-badge&logo=firefox-browser&logoColor=white)](https://abuel3ees.dev)
 
 </div>
