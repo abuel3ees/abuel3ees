@@ -1,10 +1,8 @@
-name: Generate snake contribution photos
+name: Generate snake contribution graph
 
 on:
   push:
-    branches:
-      - main
-      - master
+    branches: [main]
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
@@ -15,34 +13,22 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Generate snake SVGs
-        uses: Platane/snk@v3
+      # Modernist palette: one red on a warm ground
+      - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/github-snake-2026.svg?year=2026
-            dist/github-snake-2026-dark.svg?palette=github-dark&year=2026
+            dist/github-snake.svg?color_snake=#ec3013&color_dots=#eae7e7,#ffc4b8,#ff9783,#ff563c,#ae1800
+            dist/github-snake-dark.svg?color_snake=#ec3013&color_dots=#21262d,#4d170e,#7c1405,#ae1800,#ec3013
 
-      - name: Update snake photos in assets
+      - name: Commit
         run: |
-          cp dist/github-snake.svg assets/github-snake.svg
-          cp dist/github-snake-dark.svg assets/github-snake-dark.svg
-          cp dist/github-snake-2026.svg assets/github-snake-2026.svg
-          cp dist/github-snake-2026-dark.svg assets/github-snake-2026-dark.svg
-
-          git add assets/github-snake.svg assets/github-snake-dark.svg assets/github-snake-2026.svg assets/github-snake-2026-dark.svg
-
-          if git diff --staged --quiet; then
-            echo "No snake photo updates."
-            exit 0
-          fi
-
+          cp dist/github-snake.svg dist/github-snake-dark.svg assets/
+          git add assets/github-snake.svg assets/github-snake-dark.svg
+          git diff --staged --quiet && exit 0
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore: update snake contribution photos"
+          git commit -m "chore: update snake"
           git push
